@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { resetPassword } from '../api/auth';
-
+import "./ResetPassword.css"
 const ResetPassword = () => {
   const { token } = useParams(); // get the reset token from the URL
   const [password, setPassword] = useState('');
@@ -19,7 +19,7 @@ const ResetPassword = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="student-form">
       <h2>Reset Password</h2>
       <form onSubmit={handleResetPassword}>
         <div className="form-group">

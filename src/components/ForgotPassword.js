@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { forgotPassword } from '../api/auth';
+import "./ForgotPassword.css"
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
@@ -17,7 +18,7 @@ const ForgotPassword = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="student-form">
       <h2>Forgot Password</h2>
       <form onSubmit={handleForgotPassword}>
         <div className="form-group">
